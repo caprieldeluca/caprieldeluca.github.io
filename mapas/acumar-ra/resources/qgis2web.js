@@ -34,7 +34,7 @@ var map = new ol.Map({
 
 map.getView().fit([-6582648.538658, -4179177.507563, -6437984.253762, -4089116.898828], map.getSize());
 
-var NO_POPUP = 0
+var NO_POPUP = 1
 var ALL_FIELDS = 1
 
 /**
@@ -130,8 +130,8 @@ var onPointerMove = function(evt) {
                             }
                             popupText += '<tr>' + popupField + '</tr>';
                         }
-                    } 
-                    popupText += '</table></li>';    
+                    }
+                    popupText += '</table></li>';
                 }
             }
         } else {
@@ -216,7 +216,7 @@ var onPointerMove = function(evt) {
         if (popupText) {
             overlayPopup.setPosition(coord);
             content.innerHTML = popupText;
-            container.style.display = 'block';        
+            container.style.display = 'block';
         } else {
             container.style.display = 'none';
             closer.blur();
@@ -273,8 +273,8 @@ var onSingleClick = function(evt) {
                                 }
                                 popupText += '<tr>' + popupField + '</tr>';
                             }
-                        } 
-                        popupText += '</table></li>';    
+                        }
+                        popupText += '</table></li>';
                     }
                 }
             } else {
@@ -310,7 +310,7 @@ var onSingleClick = function(evt) {
     } else {
         popupText += '</ul>';
     }
-    
+
     var viewProjection = map.getView().getProjection();
     var viewResolution = map.getView().getResolution();
     for (i = 0; i < wms_layers.length; i++) {
@@ -329,7 +329,7 @@ var onSingleClick = function(evt) {
     if (popupText) {
         overlayPopup.setPosition(coord);
         content.innerHTML = popupText;
-        container.style.display = 'block';        
+        container.style.display = 'block';
     } else {
         container.style.display = 'none';
         closer.blur();
