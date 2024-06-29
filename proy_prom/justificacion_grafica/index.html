@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" style="margin:0px; width:100vw; height:100vh;">
+    <head>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+                }
+            }
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Proyecto de Promoción - Justificación gráfica</title>
+
+    </head>
+    <body style="margin:0px; width:100%; height:100%; display:flex;">
+        <div id="main_div" style="flex:1 0 500px; display:flex; flex-direction:column;">
+            <div id="threejs_row" style="flex:1 0 auto; display:flex;">
+                <!-- Establecer un min width en el contenedor del canvas para permitirle el shrink -->
+                <div id="canvas_container" style="flex:1 0 300px; min-width:300px; display:flex; flex-direction:column;">
+                    <!-- Establecer un min height, si no el renderer decide otra cosa. -->
+                    <canvas id="c" style="flex:1 0 150px; min-height:150px;"></canvas>
+                </div>
+                <!-- El contenedor de la gui define el background y se expande en toda la altura -->
+                <div id="gui_container" style="background-color:gray; height:100%; padding:10px; box-sizing:border-box;">
+                    <div id="gui" style="position:relative; top:0; right:0;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
