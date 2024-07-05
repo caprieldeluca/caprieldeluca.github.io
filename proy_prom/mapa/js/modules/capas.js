@@ -44,7 +44,7 @@ export function crear_ortho () {
     "nombre": "ortho"
   }
 
-  ortho.imageUrl = '../../images/Ortho.png';
+  ortho.imageUrl = 'https://caprieldeluca.github.io/proy_prom/mapa/images/Ortho.png';
   ortho.errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
   ortho.altText = 'Ortomosaico.';
   ortho.latLngBounds = L.latLngBounds([[-34.5653902273945874, -58.6512560086463210], [-34.5626892273945856, -58.6487930086463223]]);
