@@ -10,9 +10,12 @@ function init () {
     }
   );
 
-  // Cuenca
+  // Orthomosaico
+  const ortho = crear_ortho();
+  const centroide_bbox = ortho.latLngBounds.getCenter();
+
+  // Pafs
   const pafs = crear_pafs();
-  const centroide_bbox = pafs.capa.getBounds().getCenter();
 
   // Mapa principal
   const map = new L.map('map',
@@ -81,12 +84,11 @@ function init () {
     recuadro.setBounds(map.getBounds());
   });
 
-  // Agregar capa de cuenca al mapa principal
+  // Agregar capas al mapa principal
+  ortho.capa.addTo(map);
   pafs.capa.addTo(map);
 
-  // Orthomosaico
-  const ortho = crear_ortho();
-  ortho.capa.addTo(map);
+
 
 }
 
