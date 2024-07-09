@@ -2,6 +2,8 @@ Presentación para la defensa del Proyecto de Promoción.
 
 Grado: Ingeniería en Agrimensura - Orientación Geográfica.
 
+https://caprieldeluca.github.io/proy_prom/
+
 Presentación realizada en [Slides.com](https://slides.com).
 
 Utiliza [reveal.js](https://revealjs.com/) como marco de trabajo JavaScript.
