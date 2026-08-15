@@ -1,8 +1,8 @@
-# mapas/liberty-es
+# mapas/osm-es
 
 Simple mapa vectorial que muestra nombres en castellano.
 
-El [estilo crudo](https://raw.githubusercontent.com/caprieldeluca/map-es/refs/heads/main/styles/liberty-es/liberty-es.json) es una modificación del estilo [`liberty` de *OpenFreeMap*](https://tiles.openfreemap.org/styles/liberty).
+El [estilo crudo](https://raw.githubusercontent.com/caprieldeluca/map-es/refs/heads/main/styles/osm-es/osm-es.json) es una modificación del estilo [`OSM OpenMapTiles` de *OpenMapTiles*](https://openmaptiles.org/styles/#osm-openmaptiles).
 
 El código del mapa es el del [ejemplo *"Display a Map"* de *MapLibre*](https://maplibre.org/maplibre-gl-js/docs/examples/display-a-map/#__tabbed_1_2).
 
